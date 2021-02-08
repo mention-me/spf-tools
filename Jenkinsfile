@@ -34,7 +34,7 @@ EOF
 		stage('update') {
 			steps {
 				// The ZZLU8Z239WBCK is the hosted zone for route53.
-				sh './despf.sh | ./simplify.sh | ./mkblocks.sh | ./route53.sh ZZLU8Z239WBCK'
+				sh './despf.sh | ./simplify.sh | ./mkblocks.sh | ./route53.sh -a "atlassian-domain-verification=kX3daeWIlwrB5fHA9nHG1RjKnattCP7f64x7JkiJpg0KFE69RRIMb/MtwEivRNP2" -a "google-site-verification=d2qINZJBc4QLzUyRa4S5JUM45TJF15jbHauUZpCXK9o" -a "apple-domain-verification=dAgmnWhoE9L4z1iE" ZZLU8Z239WBCK'
 			}
 		}
 
