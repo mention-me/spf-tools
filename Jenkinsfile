@@ -23,7 +23,8 @@ pipeline {
 cat > ~/.spf-toolsrc <<EOF
 DOMAIN=mention-me.com
 ORIG_SPF=spf-orig.mention-me.com
-DESPF_SKIP_DOMAINS=
+# Salesforce uses a macro for its DNS record, so we can't despf it.
+DESPF_SKIP_DOMAINS=_spf.salesforce.com
 DNS_TIMEOUT=5
 DNS_SERVER=
 EOF
