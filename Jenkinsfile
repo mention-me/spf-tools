@@ -35,7 +35,7 @@ EOF
 		stage('update') {
 			steps {
 				// The ZZLU8Z239WBCK is the hosted zone for route53.
-				sh './despf.sh | ./simplify.sh | ./mkblocks.sh | ./route53.sh -a "atlassian-domain-verification=kX3daeWIlwrB5fHA9nHG1RjKnattCP7f64x7JkiJpg0KFE69RRIMb/MtwEivRNP2" -a "google-site-verification=d2qINZJBc4QLzUyRa4S5JUM45TJF15jbHauUZpCXK9o" -a "apple-domain-verification=dAgmnWhoE9L4z1iE" -a "atlassian-sending-domain-verification=46359606-6d27-4182-a759-e2ebe58bb4e8" ZZLU8Z239WBCK'
+				sh './despf.sh | ./simplify.sh | ./mkblocks.sh | ./route53.sh -a "atlassian-domain-verification=kX3daeWIlwrB5fHA9nHG1RjKnattCP7f64x7JkiJpg0KFE69RRIMb/MtwEivRNP2" -a "google-site-verification=d2qINZJBc4QLzUyRa4S5JUM45TJF15jbHauUZpCXK9o" -a "apple-domain-verification=dAgmnWhoE9L4z1iE" -a "atlassian-sending-domain-verification=46359606-6d27-4182-a759-e2ebe58bb4e8" -a "notion-domain-verification=3hEc4ssTPckuVbfHWVhonAJ0MRTZGvv7w0GpoLsxEgV" ZZLU8Z239WBCK'
 			}
 		}
 
